@@ -1,4 +1,106 @@
-/* styles.css */
 body {
-  background-color: rebeccapurple;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(182, 122, 88);
+  font-family: "Satoshi", "Inter", system-ui, sans-serif;
+}
+
+/* Navbar */
+
+header {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+header h1 {
+  font-size: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+header p {
+  font-size: 14px;
+  color: beige;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+#navbar button {
+  position: relative;
+  border-style: none;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#navbar button:hover {
+  transform: translateY(-2px);
+  color: #000;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#navbar button:hover::after {
+  width: 100%;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Home Section */
+
+#home-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+  padding: 2.5rem;
+  background-color: beige;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.5),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#home-section h1 {
+  height: 30rem;
+  width: 40rem;
+}
+#home-section p {
+  font-size: 20px;
+}
+
+#home-section-food-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+#home-section-food-grid img {
+  height: 250px;
+  width: auto;
+  border: 1px solid #000;
 }
